@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Purchase Page</title>
+    <link rel="stylesheet" href="styles.css">
+<style >
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f6;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: teal;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 15px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-btn {
+    background-color: beige;
+    color: teal;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-options button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Section */
+.product {
+    display: flex;
+    gap: 20px;
+}
+
+/* Product Image Gallery */
+.product-image-gallery {
+    max-width: 400px;
+    flex: 1;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 70px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Product Details */
+.product-details {
+    flex: 2;
+}
+
+.product-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-rating {
+    font-size: 1.1rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #d9534f;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.product-discount {
+    font-size: 1rem;
+    color: #388e3c;
+    font-weight: bold;
+}
+
+/* Quantity Selector */
+.quantity {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.quantity label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.quantity input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons */
+.add-to-cart-btn,
+.buy-now-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #2874f0;
+    color: #ffffff;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0d47a1;
+}
+
+.buy-now-btn {
+    background-color: #ff7043;
+    color: #ffffff;
+}
+
+.buy-now-btn:hover {
+    background-color: #d84315;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column;
+    }
+
+    .main-image,
+    .thumbnail {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="logo">quickart</div>
+    <input type="text" class="search-bar" placeholder="Search for products...">
+    <button class="search-btn">Search</button>
+    
+</header>
+
+<!-- Main Product Section -->
+<div class="container">
+    <div class="product">
+        <div class="image-box">
+            <img src="images/p4.png" alt="Product Image" class="main-image">
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">Flower Bouqet</h1>
+            <p class="product-description">Detailed description of the product goes here. It should cover the key features and benefits of the product to attract buyers.</p>
+            <div class="product-rating">
+                ★★★★☆ (4.5)
+            </div>
+            <span class="product-price"><span style='font-size:20px;'>&#8377;</span>100.00</span>
+            <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+                <a href="paymentpage.html">
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <button class="buy-now-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

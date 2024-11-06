@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Pay Payment</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+}
+
+.payment-container {
+    width: 320px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gpay-info {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.gpay-section, .scanner-section {
+    margin-bottom: 20px;
+}
+
+.gpay-section h2, .scanner-section h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #357ae8;
+}
+
+.scanner-section .qr-scanner {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+</style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Google Pay Payment</h1>
+
+        <div class="gpay-info">
+            <h2>Payment Details</h2>
+            <p><strong>Amount:</strong> $100.00</p>
+            <p><strong>Merchant:</strong> Example Store</p>
+        </div>
+
+        <div class="gpay-section">
+            <h2>Pay with Google Pay</h2>
+            <button class="gpay-button">Proceed with GPay</button>
+        </div>
+
+        <div class="scanner-section">
+            <h2>Scan QR Code</h2>
+            <div class="qr-scanner">
+                <p>Scan the QR code to pay:</p>
+                <div class="qr-code">
+                    <!-- Placeholder for QR code (could be an image or actual QR code) -->
+                    <img src="C:\Users\BOTGI\Desktop\E COMMERCE\giftos-html\images\qrcode.png.jpeg" alt="qrcode">
+                </div>
+            </div>
+            <p>Use the Google Pay app to scan the QR code for payment.</p>
+        </div>
+    </div>
+</body>
+</html>
